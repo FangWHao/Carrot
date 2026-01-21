@@ -6,6 +6,7 @@ class FloatingPanelController {
     private var panel: FloatingPanel?
     private var isVisible = false
     private let settings = AppSettings.shared
+    private var previousActiveApp: NSRunningApplication?
     
     init() {
         setupPanel()
@@ -59,6 +60,12 @@ class FloatingPanelController {
     func show() {
         guard let panel = panel else { return }
         
+        // 记住当前前台应用（排除自己）
+        if let frontApp = NSWorkspace.shared.frontmostApplication,
+           frontApp.bundleIdentifier != Bundle.main.bundleIdentifier {
+            previousActiveApp = frontApp
+        }
+        
         // 更新尺寸
         let width = settings.panelWidth
         let height = settings.panelHeight
@@ -92,8 +99,14 @@ class FloatingPanelController {
             context.duration = 0.1
             context.timingFunction = CAMediaTimingFunction(name: .easeIn)
             panel.animator().alphaValue = 0
-        }, completionHandler: {
+        }, completionHandler: { [weak self] in
             panel.orderOut(nil)
+            
+            // 重新激活之前的前台应用，避免切换到桌面
+            if let previousApp = self?.previousActiveApp {
+                previousApp.activate(options: [])
+                self?.previousActiveApp = nil
+            }
         })
         
         isVisible = false
@@ -110,4 +123,3 @@ class FloatingPanelController {
         panel.setFrame(frame, display: true, animate: true)
     }
 }
-
