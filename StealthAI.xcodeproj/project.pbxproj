@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		001122330001 /* StealthAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001122330002; };
+		001122330003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001122330004; };
+		001122330005 /* AIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001122330006; };
+		001122330007 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001122330008; };
+		001122330009 /* FloatingPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00112233000A; };
+		00112233000B /* FloatingPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00112233000C; };
+		00112233000D /* FloatingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00112233000E; };
+		00112233000F /* HomeBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001122330010; };
+		001122330011 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001122330012; };
+		001122330013 /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001122330014; };
+		001122330015 /* AccountLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001122330016; };
+		001122330017 /* AIWebViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001122330018; };
+		001122330019 /* AIWebViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00112233001A; };
+		00112233001B /* HotkeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00112233001C; };
+		00112233001D /* FileInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00112233001E; };
+		00112233001F /* PermissionChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001122330020; };
+		001122330021 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001122330022; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		001122330002 /* StealthAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StealthAIApp.swift; sourceTree = "<group>"; };
+		001122330004 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		001122330006 /* AIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIService.swift; sourceTree = "<group>"; };
+		001122330008 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		00112233000A /* FloatingPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPanel.swift; sourceTree = "<group>"; };
+		00112233000C /* FloatingPanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPanelController.swift; sourceTree = "<group>"; };
+		00112233000E /* FloatingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingContentView.swift; sourceTree = "<group>"; };
+		001122330010 /* HomeBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBaseView.swift; sourceTree = "<group>"; };
+		001122330012 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		001122330014 /* PermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
+		001122330016 /* AccountLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountLoginView.swift; sourceTree = "<group>"; };
+		001122330018 /* AIWebViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIWebViewWrapper.swift; sourceTree = "<group>"; };
+		00112233001A /* AIWebViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIWebViewManager.swift; sourceTree = "<group>"; };
+		00112233001C /* HotkeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeyManager.swift; sourceTree = "<group>"; };
+		00112233001E /* FileInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileInjector.swift; sourceTree = "<group>"; };
+		001122330020 /* PermissionChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionChecker.swift; sourceTree = "<group>"; };
+		001122330022 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		001122330023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		001122330024 /* StealthAI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StealthAI.entitlements; sourceTree = "<group>"; };
+		001122330025 /* StealthAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StealthAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		001122330030 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		001122330040 = {
+			isa = PBXGroup;
+			children = (
+				001122330041 /* StealthAI */,
+				001122330042 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		001122330041 /* StealthAI */ = {
+			isa = PBXGroup;
+			children = (
+				001122330002 /* StealthAIApp.swift */,
+				001122330004 /* AppDelegate.swift */,
+				001122330023 /* Info.plist */,
+				001122330024 /* StealthAI.entitlements */,
+				001122330022 /* Assets.xcassets */,
+				001122330043 /* Models */,
+				001122330044 /* Views */,
+				001122330045 /* Panel */,
+				001122330046 /* WebView */,
+				001122330047 /* Utils */,
+			);
+			path = StealthAI;
+			sourceTree = "<group>";
+		};
+		001122330042 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				001122330025 /* StealthAI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		001122330043 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				001122330006 /* AIService.swift */,
+				001122330008 /* AppSettings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		001122330044 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				00112233000E /* FloatingContentView.swift */,
+				001122330010 /* HomeBaseView.swift */,
+				001122330012 /* SettingsView.swift */,
+				001122330014 /* PermissionsView.swift */,
+				001122330016 /* AccountLoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		001122330045 /* Panel */ = {
+			isa = PBXGroup;
+			children = (
+				00112233000A /* FloatingPanel.swift */,
+				00112233000C /* FloatingPanelController.swift */,
+			);
+			path = Panel;
+			sourceTree = "<group>";
+		};
+		001122330046 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				001122330018 /* AIWebViewWrapper.swift */,
+				00112233001A /* AIWebViewManager.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		001122330047 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				00112233001C /* HotkeyManager.swift */,
+				00112233001E /* FileInjector.swift */,
+				001122330020 /* PermissionChecker.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		001122330050 /* StealthAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 001122330060 /* Build configuration list for PBXNativeTarget "StealthAI" */;
+			buildPhases = (
+				001122330051 /* Sources */,
+				001122330030 /* Frameworks */,
+				001122330052 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StealthAI;
+			productName = StealthAI;
+			productReference = 001122330025 /* StealthAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		001122330070 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					001122330050 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 001122330071 /* Build configuration list for PBXProject "StealthAI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 001122330040;
+			productRefGroup = 001122330042 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				001122330050 /* StealthAI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		001122330052 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001122330021 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		001122330051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001122330001 /* StealthAIApp.swift in Sources */,
+				001122330003 /* AppDelegate.swift in Sources */,
+				001122330005 /* AIService.swift in Sources */,
+				001122330007 /* AppSettings.swift in Sources */,
+				001122330009 /* FloatingPanel.swift in Sources */,
+				00112233000B /* FloatingPanelController.swift in Sources */,
+				00112233000D /* FloatingContentView.swift in Sources */,
+				00112233000F /* HomeBaseView.swift in Sources */,
+				001122330011 /* SettingsView.swift in Sources */,
+				001122330013 /* PermissionsView.swift in Sources */,
+				001122330015 /* AccountLoginView.swift in Sources */,
+				001122330017 /* AIWebViewWrapper.swift in Sources */,
+				001122330019 /* AIWebViewManager.swift in Sources */,
+				00112233001B /* HotkeyManager.swift in Sources */,
+				00112233001D /* FileInjector.swift in Sources */,
+				00112233001F /* PermissionChecker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		001122330080 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		001122330081 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		001122330082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StealthAI/StealthAI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = StealthAI/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stealthai.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		001122330083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StealthAI/StealthAI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = StealthAI/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stealthai.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		001122330060 /* Build configuration list for PBXNativeTarget "StealthAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				001122330082 /* Debug */,
+				001122330083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		001122330071 /* Build configuration list for PBXProject "StealthAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				001122330080 /* Debug */,
+				001122330081 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 001122330070 /* Project object */;
+}
